@@ -10,6 +10,7 @@
   "author": "Dan Stewart",
   "license": "MIT",
   "dependencies": {
+    "main.css": "^2.0.0",
     "mithril": "^2.0.4"
   },
   "devDependencies": {
