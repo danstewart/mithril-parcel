@@ -8,8 +8,15 @@ Quick start template for mithril.js with typescript using parcel.
 ```
 git clone https://github.com/danstewart/mithril-parcel.git
 cd mithril-parcel
+
+# Install deps
 yarn install # or npm install
-yarn start   # or npm start
+
+# Run dev
+yarn start   # or npm run start
+
+# Build
+yarn build   # or npm run build
 ```
 
 ---
