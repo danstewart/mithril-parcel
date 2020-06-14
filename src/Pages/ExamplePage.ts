@@ -8,7 +8,10 @@ const titleStyle = {
 
 export default {
 	view: () =>	m('div.bar', [
-		m('p', 'This is src/Pages/ExamplePage.ts'),
+		m('p', [
+			'This is ', m('span.mono', 'src/Pages/ExamplePage.ts')
+		]),
+
 		m('p', { style: titleStyle }, 'Some other page'),
 
 		m('p',
@@ -16,7 +19,9 @@ export default {
 		),
 
 		// Call our components and pass it an array to render via the attrs argument
-		m('p', 'The following list is rendered by src/Components/RenderList.ts'),
+		m('p', [
+			'The following list is rendered by ', m('span.mono', 'src/Components/RenderList.ts')
+		]),
 		m(RenderList, { items: ['Thing', 'Another Thing', 'That Thing', 'This Thing'] }),
 		m('a', { href: '/' }, 'Back to Landing Page')
 	]),
