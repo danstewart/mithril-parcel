@@ -1,12 +1,12 @@
 // This is our router
 // Here we import our components and specify the routes the correspond to
 import m from 'mithril';
-import LandingPage from './components/LandingPage'
-import ExamplePage from './components/ExamplePage'
+import LandingPage from './Pages/LandingPage'
+import ExamplePage from './Pages/ExamplePage'
 
 export default {
 	route: () => {
-		m.route(document.body, '/', {
+		m.route(document.querySelector('#mount'), '/', {
 			'/': LandingPage,
 			'/example': ExamplePage,
 		});
